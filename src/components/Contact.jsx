@@ -20,7 +20,7 @@ function Contact() {
             message: data.message
         }
         try {
-            await axios.post('https://getform.io/f/lajkgxxb', userInfo);
+            await axios.post('https://getform.io/f/rbeqkjeb', userInfo);
             toast.success('Message Sent!');
         } catch (error) {
             toast.error('Something went wrong!');
@@ -34,9 +34,9 @@ function Contact() {
             <hr />
             <div className='text-center'>
                 <div className='capitalize text-3xl text-yellow-300 mt-4'>Contact us.</div>
-                <div className='mt-3 md:text-xl mx-2'>Let Our Digital Marketing Experts Help You Reach Your Goals. Get in Touch!</div>
+                <div className='md:text-xl mx-2'>Let Our Digital Marketing Experts Help You Reach Your Goals. Get in Touch!</div>
             </div>
-            <div className='flex flex-col items-center mt-8 mx-2'>
+            <div className='flex flex-col items-center mt-4 mx-2'>
                 <div className='flex flex-col items-center'>
                     <a href={mailtoLink} className='flex items-center border-[1px] border-white rounded w-[240px] my-5 p-2'>
                         <CiMail size={42}/>

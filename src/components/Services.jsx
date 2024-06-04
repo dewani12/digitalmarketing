@@ -32,15 +32,15 @@ function Services() {
               <div className='w-36 h-24 mx-auto flex items-center border-[1px] border-black shadow-lg my-2 overflow-hidden'>
                 <img className='p-1' src={items.imgUrl} alt="" />
               </div>
-              <div className='text-start text-[12px] text-gray-800'>{items.description}</div>
-              <div className='flex justify-around'>
-                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full bg-zinc-800 flex items-center'>
+              <div className='text-start text-[12px] text-gray-900'>{items.description}</div>
+              <div className='flex justify-center space-x-3'>
+                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full bg-zinc-700 flex items-center'>
                   <a href="https://wa.me/917489347620?text=Hey,%20I'm%20Interested%20in%20your%20Digital%20Marketing%20services!" target='_blank' className='flex items-center'>
                     <FaWhatsapp size={20} />
                     <span className='text-sm ml-1 text-white'>Let's Chat</span>
                   </a>
                 </div>
-                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full bg-zinc-800 flex items-center'>
+                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full bg-zinc-700 flex items-center'>
                   <IoMdCall size={24} />
                   <a href="tel:+917489347620" className='ml-1 text-sm text-white'>Call Us</a>
                 </div>
