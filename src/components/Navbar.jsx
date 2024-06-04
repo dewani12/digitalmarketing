@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
   return (
     <div>
       {/* Call Bar */}
-      <div className='w-full bg-yellow-600 h-10 flex items-center justify-center fixed top-0 z-50'>
+      <div className='w-full bg-yellow-500 h-10 flex items-center justify-center fixed top-0 z-50'>
         <div className='flex items-center text-black'>
           <IoMdCall size={24} style={{ color: 'white', fontWeight: 'bold' }} />
           <a href="tel:+917489347620" className='ml-2 font-bold text-white'>+91-7489347620</a>
