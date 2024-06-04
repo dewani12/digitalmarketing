@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "imgUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/2560px-Meta-Logo.png",
+        "title" : "Meta Ads",
+        "description": "Though Facebook ads have the potential to help you significantly improve visibility, drive sales, and grow your business online, getting the most out of your Facebook ad spend requires knowledge and experience with the Facebook ad platform. Successful Facebook advertising campaign requires careful strategy and testing to find just the right combination of targeting, content, creative design and budget to reach and engage your ideal customers."
+    },
+    {
+
+        "id": 2,
+        "imgUrl": "https://zeevector.com/wp-content/uploads/Google-Ads-Logo-PNG.png",
+        "title": "Google Ads",
+        "description": "Do you feel like your Google ads aren’t helping your bottom line? That you’re spending money on ad campaigns that aren’t leading to growth – just treading water? Rather than continue to shovel money into a pit labeled “poorly optimized Google Ads campaigns,” it’s time to call SevenAtoms. As a veteran Google Ads agency, we’ve worked with clients across numerous industries, turning struggling paid campaigns into profit engines."
+    },
+    {
+
+        "id": 3,
+        "imgUrl": "https://blueleafintech.com/wp-content/uploads/2018/09/smm-graphic.png",
+        "title": "Social Media Management",
+        "description": "Schedule your posts in bulk, learn the best time to post, repeat posts, and more to manage social media content easily and plan better. Monitor core keywords, brand hashtags, and product reviews while discovering new leads in real time across all your social channels. Monitor and manage what matters. Exchange personalized reports, and strategize campaigns more efficiently as a team, enabling quicker decision-making."
+    },
+    {
+
+        "id": 4,
+        "imgUrl": "https://static.vecteezy.com/system/resources/thumbnails/015/340/589/small_2x/video-editor-3d-character-illustration-png.png",
+        "title": "Video Editing",
+        "description": "Work with a pro to tailor your videos for your target audience. Find a video editor who is ready to make your project perfect. KushwahG motion is one of the best video post production companies offering high quality professional video editing services unique to your business. If you have footage or clips that you need editing to your taste, adding text, overlays, effects, animations, sound effects, logo, intro, and many more, then KushwahG motion is right here for you. "
+    },
+    {
+        "id": 5,
+        "imgUrl" : "https://mnbsoft.com/wp-content/uploads/2023/08/Creative-Graphics-Design.png",
+        "title": "Graphic Designing",
+        "description": "At KushwahG Media, we understand the power of visual communication in today's digital landscape. That's why we offer top-notch graphic designing services to elevate your brand's online presence. Our team of skilled designers combines creativity with strategic thinking to deliver captivating visuals that resonate with your target audience. Whether you need eye-catching social media graphics, stunning website banners, or engaging email newsletters, we've got you covered."
+    },
+    {
+        "id": 6,
+        "imgUrl" : "https://www.nextscreen.in/assets/images/bestlandingban.png",
+        "title": "Landing Page Design",
+        "description": "Well designed landing pages are critical to any inbound or paid marketing campaign. Whether they are designed for generating leads or selling products, optimizing them for conversions can be tricky. We always build responsive Landing Pages. When someone arrives on one of your landing pages, you only have a few seconds to convince them to convert. Your page’s content, design, form and call-to-action all play an important role in whether or not the visitor decides to engage with you."
+    }
+]
