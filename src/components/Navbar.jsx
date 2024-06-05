@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div>
       {/* Call Bar */}
-      <div className='w-full bg-yellow-500 h-10 flex items-center justify-center fixed top-0 z-50'>
+      <div className='w-full bg-[#3ABEF9] h-10 flex items-center justify-center fixed top-0 z-50'>
         <div className='flex items-center text-black'>
           <IoMdCall size={24} style={{ color: 'white', fontWeight: 'bold' }} />
           <a href="tel:+917803991500" className='ml-2 font-bold text-white'>+91-7803991500</a>

@@ -5,19 +5,20 @@ import { IoMdCall } from "react-icons/io";
 
 function LandingPage() {
     const textVariants = {
-        hidden: { opacity: 0, x: -100 },
+        hidden: { opacity: 0, y: 100 },
         visible: (i) => ({
             opacity: 1,
-            x: 0,
+            y: 0,
             transition: {
-                delay:0.15+ i * 0.3, // delay based on the index
+                delay:0.15+ i * 0.3, 
             },
         }),
     };
 
     return (
-        <div name="home" className='w-full md:h-screen bg-zinc-900 pt-1 md:px-20 px-4'>
-            <div className="text-structure mt-36 uppercase md:text-7xl text-5xl">
+        <div name="home" className='w-full md:h-screen pt-1 md:px-16 px-4 bg-zinc-900 flex flex-col md:flex-row md:space-x-5'>
+            <div className='mt-32 md:mt-40'>
+            <div className="text-structure uppercase md:text-6xl text-5xl">
                 {['we get you', 'customers,', 'not just traffic.'].map((text, i) => (
                     <motion.div
                         key={i}
@@ -26,12 +27,12 @@ function LandingPage() {
                         animate="visible"
                         variants={textVariants}
                     >
-                        <div className={i === 1 ? 'text-yellow-300' : ''}>{text}</div>
+                        <div className={i === 1 ? 'text-[#3ABEF9]' : ''}>{text}</div>
                     </motion.div>
                 ))}
             </div>
-            <div className='my-8'>
-                <h1 className='md:text-xl'>Ready to Elevate your Business! Let's get in Touch,</h1>
+            <div className='py-8'>
+                <h1 className='md:text-sm'>Ready to Elevate your Business! Let's get in Touch,</h1>
                 <div className='flex space-x-2'>
                     <div className='mt-3 py-3 md:py-2 px-3 w-30 rounded-full border-[1px] hover:bg-zinc-700 duration-300'>
                         <a
@@ -43,12 +44,14 @@ function LandingPage() {
                             <span className='text-sm ml-1'>Let's Chat</span>
                         </a>
                     </div>
-                    <div className='mt-3 py-3 md:py-2 px-4 w-28 rounded-full border-[1px] flex items-center hover:bg-zinc-700 duration-300'>
+                    <div className='mt-3 py-2 md:py-2 px-4 w-28 rounded-full border-[1px] flex items-center hover:bg-zinc-700 duration-300'>
                         <IoMdCall size={20} />
                         <a href="tel:+917803991500" className='ml-1 text-sm text-white'>Call Us</a>
                     </div>
                 </div>
                 </div>
+                </div>
+                <div className='md:mt-40 md:w-[460px]'><img src="https://twistedpixels.co.za/wp-content/uploads/2023/09/Asset-1@10x-2.png" alt="" /></div>
         </div>
     );
 }

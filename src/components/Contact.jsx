@@ -56,7 +56,7 @@ function Contact() {
         <div name='contact us' className='w-full bg-zinc-900 py-10'>
             <hr />
             <div className='text-center'>
-                <div className='capitalize text-3xl text-yellow-300 mt-4'>Contact us.</div>
+                <div className='capitalize text-3xl my-4'>Contact us.</div>
                 <div className='md:text-xl mx-2'>Let Our Digital Marketing Experts Help You Reach Your Goals. Get in Touch!</div>
             </div>
             <div className='contactForm flex flex-col items-center mt-4 mx-2'>

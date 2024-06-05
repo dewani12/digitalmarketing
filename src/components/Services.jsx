@@ -8,11 +8,14 @@ import { useInView } from 'react-intersection-observer';
 
 function Services() {
   return (
-    <div name="Services" className='w-full bg-zinc-900 text-center mb-8'>
+    <div name="Services" className='w-full bg-zinc-900 text-center pb-8'>
       <hr />
-      <div className='capitalize text-3xl text-yellow-300 mt-4'>our services.</div>
+      <div className='flex justify-center'>
+      <div className='capitalize text-3xl mt-4 ml-2'>our services.</div>
+      <div className='h-16 w-20'><img src="https://static.vecteezy.com/system/resources/thumbnails/022/595/011/small/3d-illustration-of-advertising-checklis-png.png" alt="" /></div>
+      </div>
       <div className='capitalize text-lg font-light'>the digital marketing agency</div>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-3 mx-10 my-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-3 mx-10 py-5'>
         {serv.map((items, index) => {
           const { ref, inView } = useInView({
             triggerOnce: true,
@@ -22,7 +25,7 @@ function Services() {
           return (
             <motion.div
               key={items.id}
-              className='hover:scale-105 duration-300 md:w-72 rounded-xl mb-3 p-3 bg-yellow-300'
+              className='hover:scale-105 duration-300 md:w-72 rounded-xl mb-3 p-3 bg-[#3ABEF9]'
               ref={ref}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
@@ -34,13 +37,13 @@ function Services() {
               </div>
               <div className='text-start text-[12px] text-gray-900'>{items.description}</div>
               <div className='flex justify-center space-x-3'>
-                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full bg-zinc-700 flex items-center'>
+                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full flex items-center bg-black'>
                   <a href="https://wa.me/917489347620?text=Hey,%20I'm%20Interested%20in%20your%20Digital%20Marketing%20services!" target='_blank' className='flex items-center'>
-                    <FaWhatsapp size={20} />
+                    <FaWhatsapp size={22} />
                     <span className='text-sm ml-1 text-white'>Let's Chat</span>
                   </a>
                 </div>
-                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full bg-zinc-700 flex items-center'>
+                <div className='mt-3 py-3 md:py-2 px-4 w-32 rounded-full flex items-center bg-black'>
                   <IoMdCall size={24} />
                   <a href="tel:+917489347620" className='ml-1 text-sm text-white'>Call Us</a>
                 </div>
