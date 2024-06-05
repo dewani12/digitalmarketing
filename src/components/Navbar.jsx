@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
-import { motion } from "framer-motion";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -12,7 +11,7 @@ function Navbar() {
       <div className='w-full bg-yellow-500 h-10 flex items-center justify-center fixed top-0 z-50'>
         <div className='flex items-center text-black'>
           <IoMdCall size={24} style={{ color: 'white', fontWeight: 'bold' }} />
-          <a href="tel:+917489347620" className='ml-2 font-bold text-white'>+91-7489347620</a>
+          <a href="tel:+917803991500" className='ml-2 font-bold text-white'>+91-7803991500</a>
         </div>
       </div>
       {/* Navbar */}
@@ -25,14 +24,14 @@ function Navbar() {
               smooth={true}
               duration={500}
               offset={-120}
-              activeClass='active' key={index} className={`capitalize ${index === 3 && 'mr-12'} text-white`}>
+              activeClass='active' key={index} className={`capitalize ${index === 3 && 'mr-12'} text-white hover:text-zinc-300`}>
               {item}
             </Link>
           ))}
           <Link to='contact us' smooth={true}
             duration={500}
-            offset={-65}
-            activeClass='active' className='capitalize px-4 py-2 rounded-full border-[1px] text-sm text-white'>
+            offset={-80}
+            activeClass='active' className='hover:bg-zinc-700 duration-300 capitalize px-4 py-2 rounded-full border-[1px] text-sm text-white'>
             contact us
           </Link>
         </div>
@@ -57,7 +56,7 @@ function Navbar() {
           <Link to='contact us' smooth={true}
             onClick={() => setMenu(!menu)}
             duration={500}
-            offset={-65}
+            offset={-80}
             activeClass='active' className='capitalize text-2xl px-4 py-2 rounded-full border-[1px] mt-3 text-white'>
             contact us
           </Link>

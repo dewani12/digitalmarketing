@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -31,12 +30,12 @@ function LandingPage() {
                     </motion.div>
                 ))}
             </div>
-            <div className='mt-8'>
+            <div className='my-8'>
                 <h1 className='md:text-xl'>Ready to Elevate your Business! Let's get in Touch,</h1>
                 <div className='flex space-x-2'>
-                    <div className='mt-3 py-3 md:py-2 px-3 w-30 rounded-full border-[1px]'>
+                    <div className='mt-3 py-3 md:py-2 px-3 w-30 rounded-full border-[1px] hover:bg-zinc-700 duration-300'>
                         <a
-                            href="https://wa.me/917489347620?text=Hey,%20I'm%20Interested%20in%20your%20Digital%20Marketing%20services!"
+                            href="https://wa.me/917803991500?text=Hey,%20I'm%20Interested%20in%20your%20Digital%20Marketing%20services!"
                             target='_blank'
                             className='flex items-center'
                         >
@@ -44,9 +43,9 @@ function LandingPage() {
                             <span className='text-sm ml-1'>Let's Chat</span>
                         </a>
                     </div>
-                    <div className='mt-3 py-3 md:py-2 px-4 w-28 rounded-full border-[1px] flex items-center'>
+                    <div className='mt-3 py-3 md:py-2 px-4 w-28 rounded-full border-[1px] flex items-center hover:bg-zinc-700 duration-300'>
                         <IoMdCall size={20} />
-                        <a href="tel:+917489347620" className='ml-1 text-sm text-white'>Call Us</a>
+                        <a href="tel:+917803991500" className='ml-1 text-sm text-white'>Call Us</a>
                     </div>
                 </div>
                 </div>

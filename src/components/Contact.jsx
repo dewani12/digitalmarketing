@@ -1,16 +1,29 @@
-import React from 'react'
-import { useForm } from "react-hook-form"
-import axios from 'axios'
+import React, { useState, useEffect } from 'react';
+import { useForm } from "react-hook-form";
+import axios from 'axios';
 import toast from 'react-hot-toast';
 import { CiMail } from "react-icons/ci";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
     const {
         register,
         handleSubmit,
         formState: { errors },
-      } = useForm()
+    } = useForm();
     
+    const [formVisible, setFormVisible] = useState(false);
+    const { ref, inView } = useInView();
+    const controls = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+            setFormVisible(true);
+        }
+    }, [controls, inView]);
+
     const onSubmit = async (data) => {
         const userInfo = {
             fullname: data.fullname,
@@ -18,16 +31,26 @@ function Contact() {
             phone: data.phone,
             subject: data.subject,
             message: data.message
-        }
+        };
         try {
             await axios.post('https://getform.io/f/rbeqkjeb', userInfo);
-            toast.success('Message Sent!');
+            toast.success('Message Sent!', {
+                style: {
+                  border: '1px solid #713200',
+                  padding: '16px',
+                  color: '#713200',
+                },
+                iconTheme: {
+                  primary: '#713200',
+                  secondary: '#FFFAEE',
+                },
+              });
         } catch (error) {
             toast.error('Something went wrong!');
         }
-    }
+    };
 
-    const mailtoLink = "mailto:gauravdewani2@gmail.com?subject=Interested in your Digital Marketing services";
+    const mailtoLink = "mailto:kushwahaji658@gmail.com?subject=Interested in your Digital Marketing services";
 
     return (
         <div name='contact us' className='w-full bg-zinc-900 py-10'>
@@ -36,8 +59,17 @@ function Contact() {
                 <div className='capitalize text-3xl text-yellow-300 mt-4'>Contact us.</div>
                 <div className='md:text-xl mx-2'>Let Our Digital Marketing Experts Help You Reach Your Goals. Get in Touch!</div>
             </div>
-            <div className='flex flex-col items-center mt-4 mx-2'>
-                <div className='flex flex-col items-center'>
+            <div className='contactForm flex flex-col items-center mt-4 mx-2'>
+                <motion.div 
+                    ref={ref}
+                    initial="hidden"
+                    animate={controls}
+                    variants={{
+                        visible: { opacity: 1, y: 0 },
+                        hidden: { opacity: 0, y: 100 }
+                    }}
+                    transition={{ duration: 0.5, delay: 0.1 }} // Adding a delay of 0.1s
+                    className='flex flex-col items-center'>
                     <a href={mailtoLink} className='flex items-center border-[1px] border-white rounded w-[240px] my-5 p-2'>
                         <CiMail size={42}/>
                         <div>
@@ -45,9 +77,31 @@ function Contact() {
                             <p className='mx-2 text-sm'>Directly Mail Us!</p>
                         </div>
                     </a>
-                    <div className='text-2xl font-bold mb-5'>Or</div>
-                </div>
-                <form action='' onSubmit={handleSubmit(onSubmit)} className='bg-zinc-700 md:w-96 w-[360px] py-4 rounded-lg md:px-8 px-4'>
+                </motion.div>
+                <motion.div 
+                    ref={ref}
+                    initial="hidden"
+                    animate={controls}
+                    variants={{
+                        visible: { opacity: 1, y: 0 },
+                        hidden: { opacity: 0, y: 100 }
+                    }}
+                    transition={{ duration: 0.5, delay: 0.2 }} // Adding a delay of 0.2s
+                    className='text-2xl font-bold mb-5'>
+                    Or
+                </motion.div>
+                <motion.form 
+                    ref={ref}
+                    initial="hidden"
+                    animate={controls}
+                    variants={{
+                        visible: { opacity: 1, y: 0 },
+                        hidden: { opacity: 0, y: 100 }
+                    }}
+                    transition={{ duration: 0.5, delay: 0.3 }} // Adding a delay of 0.3s
+                    action='' 
+                    onSubmit={handleSubmit(onSubmit)} 
+                    className={`bg-zinc-700 md:w-96 w-[360px] py-4 rounded-lg md:px-8 px-4 ${formVisible ? 'opacity-100' : 'opacity-0'}`}>
                     <h1 className='text-xl mb-5 font-bold text-center'>Send us a message&#128640;</h1>
                     <div className='flex flex-col mb-4'>
                         <input {...register("fullname", { required: true })} type="text" id='name' name='fullname' placeholder='Full name' className='shadow appearance-none border rounded px-2 py-1 leading-tight focus:outline-none focus:shadow-outline mt-1 h-10 md:h-7 text-black'/>
@@ -69,12 +123,12 @@ function Contact() {
                         <textarea {...register("message", { required: false })} type="text" id='message' name='message' placeholder='Message' className='shadow appearance-none border rounded px-2 py-1 leading-tight focus:outline-none focus:shadow-outline mt-1 h-40 text-black'/>
                     </div>
                     <div className='flex justify-center'>
-                        <button type="submit" className='py-2 px-6 rounded-full border-[1px] mt-3 border-white text-xl'>Send</button>
+                        <button type="submit" className='py-2 px-6 rounded-full border-[1px] mt-3 border-white text-xl hover:bg-zinc-500 duration-300'>Send</button>
                     </div>
-                </form>
+                </motion.form>
             </div>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default Contact;
