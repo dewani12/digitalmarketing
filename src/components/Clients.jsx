@@ -42,7 +42,7 @@ function Clients() {
       <hr />
       <div className='flex md:flex-row flex-col mt-5'>
         <div className='flex mx-auto items-center space-x-2 mb-3'>
-      <div className='capitalize text-2xl'>What client's say?</div>
+      <div className='capitalize text-2xl'>What our client's say?</div>
       <div className='h-12 w-12'><img src='https://cdn-icons-png.flaticon.com/512/1591/1591045.png' alt="" /></div>
       </div>
       <div className='flex justify-center items-center relative md:w-[500px] md:h-[300px] w-[310px] h-[220px] mx-auto'>
