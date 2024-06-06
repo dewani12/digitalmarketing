@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import { Toaster } from 'react-hot-toast';
 import PopUpContact from './components/PopUpContact'
 import Marque from './components/Marque'
+import Clients from './components/Clients'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Marque/>
       <Services/>
       <About/>
+      <Clients/>
       <Contact/>
       <Footer/>
     </div>
