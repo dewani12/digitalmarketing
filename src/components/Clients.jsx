@@ -38,7 +38,7 @@ function Clients() {
         setSlide(slide === 0 ? slides.length - 1 :slide-1);
     }
   return (
-    <div className='w-full'>
+    <div className='w-full pb-4'>
       <hr />
       <div className='flex md:flex-row flex-col mt-5'>
         <div className='flex mx-auto items-center space-x-2 mb-3'>

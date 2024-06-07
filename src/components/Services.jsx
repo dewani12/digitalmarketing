@@ -11,7 +11,7 @@ function Services() {
     <div name="Services" className='w-full bg-zinc-900 text-center pb-8'>
       <hr />
       <div className='flex justify-center'>
-      <div className='capitalize text-3xl mt-4 ml-2'>our services.</div>
+      <div className='capitalize text-2xl mt-4 ml-2'>our services.</div>
       <div className='h-16 w-20'><img src="https://static.vecteezy.com/system/resources/thumbnails/022/595/011/small/3d-illustration-of-advertising-checklis-png.png" alt="" /></div>
       </div>
       <div className='capitalize text-lg font-light'>the digital marketing agency</div>

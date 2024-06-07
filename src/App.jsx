@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast';
 import PopUpContact from './components/PopUpContact'
 import Marque from './components/Marque'
 import Clients from './components/Clients'
+import Stats from './components/Stats'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Services/>
       <About/>
       <Clients/>
+      <Stats/>
       <Contact/>
       <Footer/>
     </div>

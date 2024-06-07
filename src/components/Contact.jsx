@@ -55,9 +55,12 @@ function Contact() {
     return (
         <div name='contact us' className='w-full bg-zinc-900 py-10'>
             <hr />
-            <div className='text-center'>
-                <div className='capitalize text-3xl my-4'>Contact us.</div>
-                <div className='md:text-xl mx-2'>Let Our Digital Marketing Experts Help You Reach Your Goals. Get in Touch!</div>
+            <div className='flex flex-col my-2'>
+                <div className='flex items-center mx-auto'>
+                <div className='capitalize text-2xl'>Contact us.</div>
+                <div className='h-12 w-12'><img src="https://ksbddegreecollege.org/v1/img/Contact-Us-PNG.png" alt="" /></div>
+                </div>
+            <div className='text-center mx-2 md:text-xl'>Let Our Digital Marketing Experts Help You Reach Your Goals. Get in Touch!</div>
             </div>
             <div className='contactForm flex flex-col items-center mt-4 mx-2'>
                 <motion.div 
