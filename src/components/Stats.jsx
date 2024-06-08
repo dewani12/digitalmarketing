@@ -4,23 +4,23 @@ import growth from '/growth.gif'
 
 function Stats() {
     return (
-        <div name="Blog" className='w-full'>
+        <div name="Blogs" className='w-full'>
             <hr />
             <div className='flex items-center justify-center py-2'>
                 <div className='text-2xl'>Success Stories</div>
                 <div className='h-12 w-12'><img src={statpng} alt="" /></div>
             </div>
-            <div className='flex justify-center pb-20'>
-                <div className='md:w-1/2 mx-10 bg-zinc-700 rounded-sm p-2 flex flex-col md:flex-row justify-center custom-shadow'>
-                    <div className='md:w-[850px]' >
+            <div className='flex justify-center pb-16'>
+                <div className='md:w-1/2 mx-10 bg-zinc-700 items-center rounded-sm p-2 flex flex-col md:flex-row justify-center custom-shadow'>
+                    <div className='md:w-[1000px]' >
                     <img src={growth} alt="" />
                     </div>
                     <div className='text'>We invite you to partner with us to grow your business. Together, we can achieve remarkable success, and as a testament to our collaboration, your success story will be proudly featured on our website. Join us and let’s create a journey of growth and achievement that will inspire others.</div>
                 </div>
             </div>
             <div className='space-y-8'>
-                <div className='flex md:flex-row flex-col md:space-x-2 space-y-3 md:space-y-0 mx-4'>
-                    <div className='bg-[#3ABEF9] p-2 rounded-sm'>
+                <div className='flex md:flex-row flex-col md:space-x-4 space-y-5 md:space-y-0 mx-4'>
+                    <div className='bg-zinc-300 p-2 rounded-sm custom-shadow'>
                         <div className='font-semibold text-black'>Project A</div>
                         <p className='text-black text-xl mt-1'>Transforming SSR Group Noida Real Estate</p>
                     </div>
@@ -49,8 +49,8 @@ function Stats() {
                     </div>
                 </div>
 
-                <div className='flex md:flex-row flex-col md:space-x-2 space-y-3 md:space-y-0 mx-4'>
-                    <div className='bg-[#3ABEF9] p-2 rounded-sm'>
+                <div className='flex md:flex-row flex-col md:space-x-4 space-y-5 md:space-y-0 mx-4'>
+                    <div className='bg-zinc-300 p-2 rounded-sm custom-shadow'>
                         <div className='font-semibold text-black'>Project B</div>
                         <p className='text-black text-xl mt-1'>Enhancing Prime Reality Mumbai Management</p>
                     </div>
@@ -78,8 +78,8 @@ function Stats() {
                     </div>
                 </div>
 
-                <div className='flex md:flex-row flex-col md:space-x-2 space-y-3 md:space-y-0 mx-4'>
-                    <div className='bg-[#3ABEF9] p-2 rounded-sm'>
+                <div className='flex md:flex-row flex-col md:space-x-4 space-y-5 md:space-y-0 mx-4'>
+                    <div className='bg-zinc-300 p-2 rounded-sm custom-shadow'>
                         <div className='font-semibold text-black'>Project C</div>
                         <p className='text-black text-xl mt-1'>Revamping Titania Residency R.E</p>
                     </div>

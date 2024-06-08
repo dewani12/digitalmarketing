@@ -19,7 +19,7 @@ function Navbar() {
         <div className="logo text-xl text-white">KushwahG Media</div>
         {/* big screen */}
         <div className="links hidden md:flex items-center gap-8">
-          {["home", "Services", "About Us", "Blog"].map((item, index) => (
+          {["home", "Services", "About Us", "Blogs"].map((item, index) => (
             <Link to={item}
               smooth={true}
               duration={500}
@@ -43,7 +43,7 @@ function Navbar() {
       {/* small screen */}
       {menu && (
         <div className="fixed top-0 left-0 w-full h-full bg-zinc-700 flex flex-col items-center justify-center z-30">
-          {["home", "Services", "About Us", "Blog"].map((item, index) => (
+          {["home", "Services", "About Us", "Blogs"].map((item, index) => (
             <Link to={item}
               onClick={() => setMenu(!menu)}
               smooth={true}
