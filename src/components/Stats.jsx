@@ -1,13 +1,22 @@
 import React from 'react'
 import statpng from '/statpng.png'
+import growth from '/growth.gif'
 
 function Stats() {
     return (
         <div name="Blog" className='w-full'>
             <hr />
-            <div className='flex items-center justify-center py-1'>
+            <div className='flex items-center justify-center py-2'>
                 <div className='text-2xl'>Success Stories</div>
                 <div className='h-12 w-12'><img src={statpng} alt="" /></div>
+            </div>
+            <div className='flex justify-center pb-20'>
+                <div className='md:w-1/2 mx-10 bg-zinc-700 rounded-sm p-2 flex flex-col md:flex-row justify-center custom-shadow'>
+                    <div className='md:w-[850px]' >
+                    <img src={growth} alt="" />
+                    </div>
+                    <div className='text'>We invite you to partner with us to grow your business. Together, we can achieve remarkable success, and as a testament to our collaboration, your success story will be proudly featured on our website. Join us and let’s create a journey of growth and achievement that will inspire others.</div>
+                </div>
             </div>
             <div className='space-y-8'>
                 <div className='flex md:flex-row flex-col md:space-x-2 space-y-3 md:space-y-0 mx-4'>
