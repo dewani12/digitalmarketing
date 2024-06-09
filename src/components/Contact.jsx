@@ -108,19 +108,19 @@ function Contact() {
                     <h1 className='text-xl mb-5 font-bold text-center'>Send us a message&#128640;</h1>
                     <div className='flex flex-col mb-4'>
                         <input {...register("fullname", { required: true })} type="text" id='name' name='fullname' placeholder='Full name' className='shadow appearance-none border rounded px-2 py-1 leading-tight focus:outline-none focus:shadow-outline mt-1 h-10 md:h-7 text-black'/>
-                        {errors.fullname && <span className='text-yellow-300 text-sm mt-1'>This field is required</span>}
+                        {errors.fullname && <span className='text-zinc-300 text-sm mt-1'>This field is required</span>}
                     </div>
                     <div className='flex flex-col mb-4'>
                         <input {...register("email", { required: true })} type="text" id='email' name='email' placeholder='Email address' className='shadow appearance-none border rounded px-2 py-1 leading-tight focus:outline-none focus:shadow-outline mt-1 h-10 md:h-7 text-black'/>
-                        {errors.email && <span className='text-yellow-300 text-sm mt-1'>This field is required</span>}
+                        {errors.email && <span className='text-zinc-300 text-sm mt-1'>This field is required</span>}
                     </div>
                     <div className='flex flex-col mb-4'>
                         <input {...register("phone", { required: true })} type="text" id='phone' name='phone' placeholder='Phone number' className='shadow appearance-none border rounded px-2 py-1 leading-tight focus:outline-none focus:shadow-outline mt-1 h-10 md:h-7 text-black'/>
-                        {errors.phone && <span className='text-yellow-300 text-sm mt-1'>This field is required</span>}
+                        {errors.phone && <span className='text-zinc-300 text-sm mt-1'>This field is required</span>}
                     </div>
                     <div className='flex flex-col mb-4'>
                         <input {...register("subject", { required: true })} type="text" id='subject' name='subject' placeholder='Subject' className='shadow appearance-none border rounded px-2 py-1 leading-tight focus:outline-none focus:shadow-outline mt-1 h-10 md:h-7 text-black'/>
-                        {errors.subject && <span className='text-yellow-300 text-sm mt-1'>This field is required</span>}
+                        {errors.subject && <span className='text-zinc-300 text-sm mt-1'>This field is required</span>}
                     </div>
                     <div className='flex flex-col mb-4'>
                         <textarea {...register("message", { required: false })} type="text" id='message' name='message' placeholder='Message' className='shadow appearance-none border rounded px-2 py-1 leading-tight focus:outline-none focus:shadow-outline mt-1 h-40 text-black'/>

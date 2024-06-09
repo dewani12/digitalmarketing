@@ -2,6 +2,7 @@ import React from 'react';
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { IoMdCall } from "react-icons/io";
+import highlight from '/highlight.png'
 
 function LandingPage() {
     const textVariants = {
@@ -18,8 +19,8 @@ function LandingPage() {
     return (
         <div name="home" className='w-full md:h-screen pt-1 md:px-16 px-4 bg-zinc-900 flex flex-col md:flex-row md:space-x-5'>
             <div className='mt-32 md:mt-40'>
-            <div className="text-structure uppercase md:text-6xl text-5xl">
-                {['we get you', 'customers,', 'not just traffic.'].map((text, i) => (
+            <div className="text-structure uppercase md:text-5xl text-4xl">
+                {['expert digital', 'marketing solutons', 'for your success.'].map((text, i) => (
                     <motion.div
                         key={i}
                         custom={i}
@@ -32,7 +33,8 @@ function LandingPage() {
                 ))}
             </div>
             <div className='py-8'>
-                <h1 className='md:text-sm'>Ready to Elevate your Business! Let's get in Touch,</h1>
+                <h1 className=''>Boost Your Business with Proven Strategies! </h1>
+                <p>Get a Free Consultation,</p>
                 <div className='flex space-x-2'>
                     <div className='mt-3 py-3 md:py-2 px-3 w-30 rounded-full border-[1.2px] hover:bg-zinc-700 duration-300'>
                         <a
@@ -51,7 +53,7 @@ function LandingPage() {
                 </div>
                 </div>
                 </div>
-                <div className='md:mt-40 md:w-[460px]'><img src="https://twistedpixels.co.za/wp-content/uploads/2023/09/Asset-1@10x-2.png" alt="" /></div>
+                <div className='md:mt-40 md:w-[460px]'><img src={highlight} alt="" /></div>
         </div>
     );
 }
