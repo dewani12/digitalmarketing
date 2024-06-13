@@ -20,7 +20,7 @@ function LandingPage() {
         <div name="home" className='w-full md:h-screen pt-1 md:px-16 px-4 bg-zinc-900 flex flex-col md:flex-row md:space-x-5'>
             <div className='mt-32 md:mt-40'>
             <div className="text-structure uppercase md:text-5xl text-4xl">
-                {['expert digital', 'marketing solutons', 'for your success.'].map((text, i) => (
+                {['expert digital', 'marketing solutions', 'for your success.'].map((text, i) => (
                     <motion.div
                         key={i}
                         custom={i}

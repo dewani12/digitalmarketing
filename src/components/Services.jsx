@@ -25,7 +25,7 @@ function Services() {
           return (
             <motion.div
               key={items.id}
-              className='hover:scale-105 duration-300 md:w-72 rounded-xl p-3 bg-[#3ABEF9]'
+              className='md:w-72 rounded p-3 bg-[#3ABEF9]'
               ref={ref}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
