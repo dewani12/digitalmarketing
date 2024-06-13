@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
-import logo from '/logo.jpg'
-import logo1 from '/logo1.jpg'
+import logo2 from '/logo2.png'
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -19,7 +18,7 @@ function Navbar() {
       {/* Navbar */}
       <div className='w-full h-[8vh] md:h-[13vh] bg-zinc-800 z-40 cursor-pointer fixed top-10 px-4 md:px-20 py-6 flex items-center overflow-hidden justify-between'>
         {/* <div className="logo text-xl text-white">KushwahG Media</div> */}
-        <div className='w-[130px] mt-2'><img src={logo1} alt="" /></div>
+        <div className='w-[150px] mb-6'><img src={logo2} alt="" /></div>
         {/* big screen */}
         <div className="links hidden md:flex items-center gap-8">
           {["home", "Services", "About Us", "Blogs"].map((item, index) => (

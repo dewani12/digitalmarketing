@@ -71,7 +71,7 @@ function PopUpContact() {
                                 {errors.phone && <span className='text-zinc-300 text-sm mt-1'>This field is required</span>}
                             </div>
                             <div className='flex justify-center'>
-                                <button type="submit" className='py-1 px-4 rounded-full border-[1px] mt-2 border-white text-xl'>Send</button>
+                                <button type="submit" className='py-1 px-4 rounded-full border-[1px] mt-2 border-white text-xl hover:bg-zinc-600 duration-300'>Send</button>
                             </div>
                         </form>
                     </div>
