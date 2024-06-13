@@ -13,7 +13,7 @@ function Footer() {
             <a href="https://www.facebook.com/354398261911485"><FaFacebook size={24} /></a>
             </div>
             <div className='mt-6 border-t border-white flex flex-col items-center pt-5'>
-                <p className='text-[12px]'>&copy; 2024 KushwahG Motion. All rights reserved.</p>
+                <p className='text-[12px]'>&copy; 2024 KushwahG Media. All rights reserved.</p>
                 <p className='text-[12px]'>Supportive Partner &#9829; Sachin</p>
             </div>
         </div>
