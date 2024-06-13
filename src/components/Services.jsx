@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Services() {
   return (
-    <div name="Services" className='w-full bg-zinc-900 text-center pb-8'>
+    <div name="Services" className='w-full bg-zinc-900 text-center'>
       <hr />
       <div className='flex justify-center'>
       <div className='capitalize text-2xl mt-4 ml-2'>our services.</div>
@@ -25,7 +25,7 @@ function Services() {
           return (
             <motion.div
               key={items.id}
-              className='hover:scale-105 duration-300 md:w-72 rounded-xl mb-3 p-3 bg-[#3ABEF9]'
+              className='hover:scale-105 duration-300 md:w-72 rounded-xl p-3 bg-[#3ABEF9]'
               ref={ref}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
