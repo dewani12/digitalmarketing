@@ -33,7 +33,7 @@ function Contact() {
             message: data.message
         };
         try {
-            await axios.post('https://getform.io/f/rbeqkjeb', userInfo);
+            await axios.post('https://getform.io/f/ebpdqpzb', userInfo);
             toast.success('Message Sent!', {
                 style: {
                   border: '1px solid #713200',

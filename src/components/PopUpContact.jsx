@@ -32,7 +32,7 @@ function PopUpContact() {
             phone: data.phone,
         };
         try {
-            await axios.post('https://getform.io/f/rbeqkjeb', userInfo);
+            await axios.post('https://getform.io/f/ebpdqpzb', userInfo);
             closePopup();
             toast.success('Message Sent!', {
                 style: {
